@@ -13,10 +13,10 @@
       "item": "fim:compressed_hay"
     },
     "H": {
-      "item": "minecraft:diamond_hoe"
+      "item": "fim:super_wheat_hoe"
     }
   },
   "result": {
-    "item": "fim:wheat_hoe"
+    "item": "fim:supreme_wheat_hoe"
   }
 }

@@ -31,7 +31,6 @@ public class ModHoeItem extends HoeItem {
     public void setHarvestRange(int newRange) { this.harvestRange = newRange; }
 
     // this is run after the block is broken, currently used to update the tools damage value
-    // also I have no clue what the fuck it does
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         //System.out.println(pos);
