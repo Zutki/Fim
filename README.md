@@ -1,9 +1,14 @@
-# Fabric Example Mod
+# Fim - Farming Improved
+---
+## Info
+Fim is a fabric farming improvement mod, Fim accomplishes this by adding hoes which can harvest wide areas and replant them with ease.
+Currently, Fim is in very early development and only adds hoes for wheat.
+**NOTE:** This mod requires (https://www.curseforge.com/minecraft/mc-mods/fabric-api)[Fabric API] to work.
 
-## Setup
+## Plans
+- [ ] More hoes
+- [ ] Omni Hoe
+- [ ] Farming blocks maybe
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Compilation Instructions
+Run the gradle `build` task, and the output should be in build/libs
