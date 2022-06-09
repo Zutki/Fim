@@ -9,6 +9,7 @@ import net.minecraft.util.Rarity;
 import net.zutki.fim.Fim;
 
 import net.minecraft.util.registry.Registry;
+import net.zutki.fim.item.custom.ModBucketItem;
 import net.zutki.fim.item.custom.ModHoeItem;
 
 public class ModItems {
@@ -23,6 +24,9 @@ public class ModItems {
     public static final Item SUPREME_WHEAT_HOE = registerItem("supreme_wheat_hoe",
             new ModHoeItem(ToolMaterials.DIAMOND, 1, 4,
                     new FabricItemSettings().group(ItemGroup.TOOLS).rarity(Rarity.EPIC), 5));
+
+    public static final Item INFINITE_WATER_BUCKET = registerItem("infinite_water_bucket",
+            new ModBucketItem(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Fim.MOD_ID, name), item);
