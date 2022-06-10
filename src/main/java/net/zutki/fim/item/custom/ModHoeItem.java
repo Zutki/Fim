@@ -21,10 +21,12 @@ import java.util.function.Predicate;
 
 public class ModHoeItem extends HoeItem {
     private int harvestRange; // the area around the block which will be harvested
+    private String targetCrop;
 
-    public ModHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings, int harvestRange) {
+    public ModHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings, int harvestRange, String targetCrop) {
         super(material, attackDamage, attackSpeed, settings);
         this.harvestRange = harvestRange;
+        this.targetCrop = targetCrop;
     }
 
     public int getHarvestRange() { return harvestRange; }
@@ -56,7 +58,7 @@ public class ModHoeItem extends HoeItem {
                 for (int j = -harvestRange; j < harvestRange + 1; j++) {
                     BlockState block = world.getBlockState(harvestBlockPos.add(j, 0, i)); // create an instance
                     if (block.getBlock() instanceof CropBlock cBlock && // make sure it's a CropBlock
-                            cBlock.getName().getString().equals("Wheat Crops") && // make sure it's wheat
+                            cBlock.getName().getString().equals(targetCrop) && // make sure it's wheat
                             cBlock.isMature(block)) { // make sure it's fully grown
 
                         world.breakBlock(harvestBlockPos.add(j, 0, i), true, context.getPlayer()); // break it
