@@ -21,13 +21,21 @@ import java.util.function.Predicate;
 
 public class ModHoeItem extends HoeItem {
     private int harvestRange; // the area around the block which will be harvested
-    private String targetCrop;
+    private String targetCrop = "";
+
+    private boolean skipCheck = false;
 
     public ModHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings, int harvestRange, String targetCrop) {
         super(material, attackDamage, attackSpeed, settings);
         this.harvestRange = harvestRange;
         this.targetCrop = targetCrop;
     }
+    public ModHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings, int harvestRange, boolean skipCheck) {
+        super(material, attackDamage, attackSpeed, settings);
+        this.harvestRange = harvestRange;
+        this.skipCheck = skipCheck;
+    }
+
 
     public int getHarvestRange() { return harvestRange; }
     public void setHarvestRange(int newRange) { this.harvestRange = newRange; }
@@ -58,7 +66,7 @@ public class ModHoeItem extends HoeItem {
                 for (int j = -harvestRange; j < harvestRange + 1; j++) {
                     BlockState block = world.getBlockState(harvestBlockPos.add(j, 0, i)); // create an instance
                     if (block.getBlock() instanceof CropBlock cBlock && // make sure it's a CropBlock
-                            cBlock.getName().getString().equals(targetCrop) && // make sure it's wheat
+                            (cBlock.getName().getString().equals(targetCrop) || skipCheck) && // make sure it's the targeted crop, OR that we don't have to perform this check
                             cBlock.isMature(block)) { // make sure it's fully grown
 
                         world.breakBlock(harvestBlockPos.add(j, 0, i), true, context.getPlayer()); // break it

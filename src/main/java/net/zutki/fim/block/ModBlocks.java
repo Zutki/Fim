@@ -18,6 +18,36 @@ public class ModBlocks {
             new HayBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(0.5f).sounds(BlockSoundGroup.GRASS)),
             ItemGroup.BUILDING_BLOCKS);
 
+    // CARROTS
+
+    public static final Block BARREL_OF_CARROTS = registerBlock("barrel_of_carrots",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ItemGroup.BUILDING_BLOCKS);
+
+    public static final Block COMPRESSED_BARREL_OF_CARROTS = registerBlock("compressed_barrel_of_carrots",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ItemGroup.BUILDING_BLOCKS);
+
+    // POTATOES
+
+    public static final Block BARREL_OF_POTATOES = registerBlock("barrel_of_potatoes",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ItemGroup.BUILDING_BLOCKS);
+
+    public static final Block COMPRESSED_BARREL_OF_POTATOES = registerBlock("compressed_barrel_of_potatoes",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ItemGroup.BUILDING_BLOCKS);
+
+    // BEETROOTS
+
+    public static final Block BARREL_OF_BEETROOTS = registerBlock("barrel_of_beetroots",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ItemGroup.BUILDING_BLOCKS);
+
+    public static final Block COMPRESSED_BARREL_OF_BEETROOTS = registerBlock("compressed_barrel_of_beetroots",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ItemGroup.BUILDING_BLOCKS);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(Fim.MOD_ID, name), block);

@@ -72,6 +72,11 @@ public class ModItems {
             new ModHoeItem(ToolMaterials.DIAMOND, 1, 4,
                     new FabricItemSettings().group(ItemGroup.TOOLS).rarity(Rarity.EPIC), 5, "Beetroots"));
 
+    // OMNIHOE
+    /*public static final Item OMNIHOE = registerItem("omni_hoe",
+            new ModHoeItem(ToolMaterials.DIAMOND, 1, 4,
+                    new FabricItemSettings().group(ItemGroup.TOOLS).rarity(Rarity.EPIC), 5, "Beetroots"));*/
+
     // OTHER
 
     public static final Item INFINITE_WATER_BUCKET = registerItem("infinite_water_bucket",

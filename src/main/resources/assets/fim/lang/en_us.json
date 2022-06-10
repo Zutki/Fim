@@ -12,5 +12,11 @@
   "item.fim.super_beetroot_hoe": "Super Beetroot Hoe",
   "item.fim.supreme_beetroot_hoe": "Supreme Beetroot Hoe",
   "block.fim.compressed_hay": "Compressed Hay Bale",
+  "block.fim.barrel_of_carrots": "Barrel of Carrots",
+  "block.fim.compressed_barrel_of_carrots": "Compressed Barrel of Carrots",
+  "block.fim.barrel_of_potatoes": "Barrel of Potatoes",
+  "block.fim.compressed_barrel_of_potatoes": "Compressed Barrel of Potatoes",
+  "block.fim.barrel_of_beetroots": "Barrel of Beetroots",
+  "block.fim.compressed_barrel_of_beetroots": "Compressed Barrel of Beetroots",
   "item.fim.infinite_water_bucket": "Infinite Water Bucket"
 }
