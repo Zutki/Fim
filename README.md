@@ -7,10 +7,13 @@ Fim is a fabric farming improvement mod, Fim accomplishes this by adding tools w
 
 ## Current Features:
 - Wheat Hoe with 3 different tiers (Regular, Super, Supreme)
+- Carrot Hoe with 3 different tiers (Regular, Super, Supreme)
+- Potato Hoe with 3 different tiers (Regular, Super, Supreme)
+- Beetroot Hoe with 3 different tiers (Regular, Super, Supreme)
 - Infinite Water Bucket
 
 ## Plans
-- [ ] More hoes
+- [x] More hoes
 - [ ] Omni Hoe
 - [ ] Farming blocks maybe
 
