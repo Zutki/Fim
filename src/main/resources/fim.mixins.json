@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "FarmlandBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
