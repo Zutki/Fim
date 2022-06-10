@@ -14,7 +14,7 @@ Fim is a fabric farming improvement mod, Fim accomplishes this by adding tools w
 
 ## Plans
 - [x] More hoes
-- [ ] Omni Hoe
+- [x] Omni Hoe
 - [ ] Farming blocks maybe
 
 ## Compilation Instructions
