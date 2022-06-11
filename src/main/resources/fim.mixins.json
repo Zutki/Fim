@@ -8,6 +8,9 @@
   "client": [
     "FarmlandBlockMixin"
   ],
+  "server": [
+    "FarmlandBlockMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
